@@ -36,16 +36,3 @@ export const CartItems = styled.div`
 `;
 
 
-// .cart-dropdown-container {
-    
-
-//     .empty-message {
-        
-//     }
-
-//     .cart-items {
-        
-//     }
-
-   
-// }

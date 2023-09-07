@@ -1,9 +1,15 @@
+import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 import isPropValid from '@emotion/is-prop-valid';
 import { StyleSheetManager } from 'styled-components';
 import { BackgroundImage, Body, DirectoryItemContainer, } from './directory-item-styles';
+import { DirectoryCategory } from '../directory/directoty.component';
 
-const DirectoryItem = ({ category }) => {
+type DirectoryItemProps = {
+  category: DirectoryCategory
+}
+
+const DirectoryItem: FC<DirectoryItemProps> = ({ category }) => {
     const { imageUrl, title, route } = category;
     const navigate = useNavigate();
 
